@@ -30,4 +30,18 @@ La consulta a llamar se llama getInformación, y recibe como parametro:
 Las respuestas esperadas son las siguientes:
 
 - Usuario no encontrado, intente con un usuario valido
-- Cliente con el id: \$ID no fue encontrado en la Base de datos
+- Su usuario cuenta con permisos de operario :Cliente con el id: \$ID no fue encontrado en la Base de datos
+- Su usuario cuenta con permisos de operario : El cliente a consultar es: \$TODOS LOS DATOS
+- Su usuario cuenta con permisos de admin: El cliente $nombre $apellido, tiene 1 casa ubicada en $ubicacion, con $cuartos cuartos, y se llama: \$nombreCasa
+- Su usuario cuenta con permisos de admin: El cliente $nombre $apellido, no tiene casas asociadas a su perfil
+- Su usuario cuenta con permisos de admin: El cliente con el id \$id no pudo ser encontrado en la base de datos.
+
+## Reglas
+
+Debe de utilizar:
+
+- Templates String en todas las respuestas
+- Todas las funciones deben de ser Arrow
+- Debe utilizar Destructuring al menos una vez (recomendado, al guardar los datos para dar las respuestas)
+- Puede utilizar callbacks, promises y async functions en cualquier caso que lo requiera.
+- Usar obligatoriamente al menos 1 Async y Await
